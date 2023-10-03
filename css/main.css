@@ -150,8 +150,11 @@ span {
     width: 100%;
     display: block;
     top: 0;
+    padding: 20px;
+    box-shadow: none;
   }
   .wrapper__left {
+    width: 110%;
     padding: 20px 0 0 0;
   }
   .wrapper__right {

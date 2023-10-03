@@ -147,11 +147,14 @@ span {
 
 @media screen and (max-width: 400px) {
     .wrapper {
-        position: absolute  ;
+        position: absolute;
         width: 100%;
         display: block;
         top: 0;
+        padding: 20px;
+        box-shadow: none;
         &__left {
+            width: 110%;
             padding: 20px 0 0 0;
         }
         &__right {
