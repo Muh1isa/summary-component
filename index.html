@@ -6,11 +6,42 @@
     <title>Result Summary Component</title>
     
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     
-   
+   <div class="wrapper">
+        <div class="wrapper__left">
+            <h2 class="wrapper__left-title">your result</h2>
+            <h2 class="wrapper__left-score">76 <br><span>of 100</span></h2>
+            <h3 class="wrapper__left-reaction">great</h3>
+            <p class="wrapper__left-text">You scored higher than 65% of <br> the people who have taken <br> these tests.</p>   
+        </div>
+        <div class="wrapper__right">
+            <h2 class="wrapper__right-title">summary</h2>
+            <div class="wrapper__right-box reaction">
+                <img src="./images/icon-reaction.svg" alt="icon reaction">
+                <p class="reaction__text">reaction</p>
+                <p class="wrapper__right-box-score">80 <span>/ 100</span></p>
+            </div>
+            <div class="wrapper__right-box memory">
+                <img src="./images/icon-memory.svg" alt="icon reaction">
+                <p class="memory__text">memory</p>
+                <p class="wrapper__right-box-score">92 <span>/ 100</span></p>
+            </div>
+            <div class="wrapper__right-box verbal">
+                <img src="./images/icon-verbal.svg" alt="icon reaction">
+                <p class="verbal__text">verbal</p>
+                <p class="wrapper__right-box-score">61 <span>/ 100</span></p>
+            </div>
+            <div class="wrapper__right-box visual">
+                <img src="./images/icon-visual.svg" alt="icon reaction">
+                <p class="visual__text">visual</p>
+                <p class="wrapper__right-box-score">72 <span>/ 100</span></p>
+            </div>
+            <button type="submit">continue</button>
+        </div>
+   </div>
 
 
 </body>

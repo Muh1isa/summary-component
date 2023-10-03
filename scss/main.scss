@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Hanken Grotesk", sans-serif;
+    src: url(/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+span {
+    font-size: 18px;
+    opacity: .6;
+}
+
+.wrapper {
+    display: flex;
+    box-shadow: 8px 8px 45px hsl(221, 100%, 96%);
+    width: 800px;
+    height: 500px;
+    border-radius: 40px;
+    &__left {
+        width: 400px;
+        height: 500px;
+        background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+        border-radius: 40px;
+        box-sizing: border-box;
+        &-title {
+            font-size: 26px;
+            font-weight: 600;
+            text-transform: capitalize;
+            text-align: center;
+            color: hsl(241, 100%, 89%);
+            margin: 30px 0;
+        }
+        &-score {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 54%;
+            height: 40%;
+            font-size: 60px;
+            color: #fff;
+            background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+            line-height: 50px;
+            border-radius: 50%;
+            margin: 30px 0 40px 23%;
+        }
+        &-reaction {
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            text-transform: capitalize;
+            color: #fff;
+        }
+        &-text {
+            font-size: 18px;
+            text-align: center;
+            color: hsl(241, 100%, 89%);
+            margin: 20px 0 0 0;
+            line-height: 23px;
+        }
+    }
+    &__right {
+        width: 400px;
+        height: 500px;
+        margin: 0 0 0 30px;
+        &-title {
+            font-size: 26px;
+            font-weight: 500;
+            text-transform: capitalize;
+            margin: 30px 0;
+        }
+        &-box {
+            display: flex;
+            align-items: center;
+            width: 90%;
+            height: 60px;
+            border-radius: 15px;
+            margin: 0 0 20px 0;
+            padding: 20px;
+            &-score {
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+        .reaction {
+            background-color: rgba($color: hsl(0, 100%, 67%), $alpha: .05);
+            &__text {
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: capitalize;
+                color: hsl(0, 100%, 67%);
+                margin: 0 95px 0 5px;
+            }
+        }
+        .memory {
+            background-color: rgba($color: hsl(39, 100%, 56%), $alpha: .05);
+            &__text {
+                font-size: 18px;
+                text-transform: capitalize;
+                color: hsl(39, 100%, 56%);
+                margin: 0 100px 0 5px;
+            }
+        }
+        .verbal {
+            background-color: rgba($color: hsl(166, 100%, 37%), $alpha: .05);
+            &__text {
+                font-size: 18px;
+                text-transform: capitalize;
+                color: hsl(166, 100%, 37%);
+                margin: 0 115px 0 5px;
+            }
+        }
+        .visual {
+            background-color: rgba($color: hsl(234, 85%, 45%), $alpha: .05);
+            &__text {
+                font-size: 18px;
+                text-transform: capitalize;
+                color: hsl(234, 85%, 45%);
+                margin: 0 115px 0 5px;
+            }
+        }
+        button {
+            width: 90%;
+            height: 50px;
+            font-size: 18px;
+            text-transform: capitalize;
+            color: #fff;
+            background-color: hsl(224, 30%, 27%);
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .wrapper {
+        position: absolute  ;
+        width: 100%;
+        display: block;
+        top: 0;
+        &__left {
+            padding: 20px 0 0 0;
+        }
+        &__right {
+            margin: 0 0 0 15px;
+        }
+    }
+}

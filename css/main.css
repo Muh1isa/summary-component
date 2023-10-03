@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+  src: url(/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+span {
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.wrapper {
+  display: flex;
+  box-shadow: 8px 8px 45px hsl(221, 100%, 96%);
+  width: 800px;
+  height: 500px;
+  border-radius: 40px;
+}
+.wrapper__left {
+  width: 400px;
+  height: 500px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+.wrapper__left-title {
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+  margin: 30px 0;
+}
+.wrapper__left-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 54%;
+  height: 40%;
+  font-size: 60px;
+  color: #fff;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  line-height: 50px;
+  border-radius: 50%;
+  margin: 30px 0 40px 23%;
+}
+.wrapper__left-reaction {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+}
+.wrapper__left-text {
+  font-size: 18px;
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+  margin: 20px 0 0 0;
+  line-height: 23px;
+}
+.wrapper__right {
+  width: 400px;
+  height: 500px;
+  margin: 0 0 0 30px;
+}
+.wrapper__right-title {
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 30px 0;
+}
+.wrapper__right-box {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 60px;
+  border-radius: 15px;
+  margin: 0 0 20px 0;
+  padding: 20px;
+}
+.wrapper__right-box-score {
+  font-size: 18px;
+  font-weight: 600;
+}
+.wrapper__right .reaction {
+  background-color: rgba(255, 87, 87, 0.05);
+}
+.wrapper__right .reaction__text {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: hsl(0, 100%, 67%);
+  margin: 0 95px 0 5px;
+}
+.wrapper__right .memory {
+  background-color: rgba(255, 176, 31, 0.05);
+}
+.wrapper__right .memory__text {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: hsl(39, 100%, 56%);
+  margin: 0 100px 0 5px;
+}
+.wrapper__right .verbal {
+  background-color: rgba(0, 189, 145, 0.05);
+}
+.wrapper__right .verbal__text {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: hsl(166, 100%, 37%);
+  margin: 0 115px 0 5px;
+}
+.wrapper__right .visual {
+  background-color: rgba(17, 37, 212, 0.05);
+}
+.wrapper__right .visual__text {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: hsl(234, 85%, 45%);
+  margin: 0 115px 0 5px;
+}
+.wrapper__right button {
+  width: 90%;
+  height: 50px;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.wrapper__right button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media screen and (max-width: 400px) {
+  .wrapper {
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 0;
+  }
+  .wrapper__left {
+    padding: 20px 0 0 0;
+  }
+  .wrapper__right {
+    margin: 0 0 0 15px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
